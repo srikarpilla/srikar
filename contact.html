@@ -1,0 +1,109 @@
+<section class="section section-contact">
+    <div class="container">
+        <h2 class="common-heading">Contact Us</h2>
+    </div>
+
+    <div class="section-contact-main contact-container">
+        <form action="contact_process.php" method="POST" style="
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        ">
+            <div style="display: flex; gap: 15px;">
+                <div style="flex: 1;">
+                    <label for="username" style="
+                        display: block;
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                        color: #333;
+                    ">Username</label>
+                    <input type="text" name="username" placeholder="Username" id="username" required
+                        autocomplete="off" style="
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        font-size: 1rem;
+                        box-sizing: border-box; /* Ensures padding doesn't affect width */
+                        transition: border-color 0.3s;
+                    ">
+                </div>
+                <div style="flex: 1;">
+                    <label for="email" style="
+                        display: block;
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                        color: #333;
+                    ">Email</label>
+                    <input type="email" placeholder="demo@gmail.com" name="email" id="email" required
+                        autocomplete="off" style="
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        font-size: 1rem;
+                        box-sizing: border-box; /* Ensures padding doesn't affect width */
+                        transition: border-color 0.3s;
+                    ">
+                </div>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="subject" style="
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                    color: #333;
+                ">Subject</label>
+                <input type="text" name="subject" placeholder="Subject" id="subject" required autocomplete="off"
+                    style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                    box-sizing: border-box; /* Ensures padding doesn't affect width */
+                    transition: border-color 0.3s;
+                ">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="textarea" style="
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                    color: #333;
+                ">Message</label>
+                <textarea name="message" id="textarea" cols="30" rows="5" required placeholder="Message"
+                    autocomplete="off" style="
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                    box-sizing: border-box; /* Ensures padding doesn't affect width */
+                    resize: vertical; /* Allows vertical resizing */
+                    transition: border-color 0.3s;
+                "></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Send Message" class="btn" style="
+                    padding: 12px 24px;
+                    background-color: #007bff;
+                    color: #fff;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border: none;
+                    font-size: 1rem;
+                    transition: background-color 0.3s;
+                ">
+            </div>
+        </form>
+    </div>
+</section>
